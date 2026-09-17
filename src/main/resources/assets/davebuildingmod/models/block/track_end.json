@@ -7,5 +7,5 @@
     "2": "davebuildingmod:block/standard_track_mip",
     "missing": "davebuildingmod:block/polished_andesite"
   },
-  "render_type": "translucent"
+  "render_type": "cutout_mipped"
 }

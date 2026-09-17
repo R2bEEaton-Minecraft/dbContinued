@@ -4,7 +4,7 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="davebuildingmod"
-version="1.0.0"
+version="1.0.1"
 displayName="Dave's Building Continued"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/daves-building-extended"
 logoFile="logo.png"
