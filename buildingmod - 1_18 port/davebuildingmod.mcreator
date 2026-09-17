@@ -8417,6 +8417,8 @@
     }
   ],
   "variable_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
   "sound_elements": [
     {
       "name": "nuclear_siren",
@@ -9184,13 +9186,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "just_enough_items"
-    ],
-    "currentGenerator": "forge-1.18.2",
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "L0rdzie, VanillaFac5, Create Mod Team, Mcreator",
     "modElementsPackage": "net.mcreator.buildingmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200346416
+  "mcreatorVersion": 202600114619
 }
