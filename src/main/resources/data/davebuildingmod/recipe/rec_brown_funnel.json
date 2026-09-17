@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "davebuildingmod:brown_steel_wall"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:brown_funnel",
+    "count": 2
+  }
+}

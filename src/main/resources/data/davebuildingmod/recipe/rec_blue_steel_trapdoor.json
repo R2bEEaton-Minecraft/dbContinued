@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:blue_steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:blue_steel_trapdoor",
+    "count": 2
+  }
+}

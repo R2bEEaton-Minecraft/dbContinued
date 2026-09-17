@@ -1,4 +1,3 @@
-
 package net.mcreator.buildingmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -7,22 +6,22 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.buildingmod.world.inventory.HelpPaperMenu;
 import net.mcreator.buildingmod.procedures.SteelHelperConditionProcedure;
 import net.mcreator.buildingmod.procedures.SteelHelperConditionNotProcedure;
+import net.mcreator.buildingmod.init.DavebuildingmodModScreens;
 
-import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class HelpPaperScreen extends AbstractContainerScreen<HelpPaperMenu> {
-	private final static HashMap<String, Object> guistate = HelpPaperMenu.guistate;
+public class HelpPaperScreen extends AbstractContainerScreen<HelpPaperMenu> implements DavebuildingmodModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("davebuildingmod:textures/screens/help_paper.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("davebuildingmod:textures/screens/helpbook.png");
 
 	public HelpPaperScreen(HelpPaperMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -35,25 +34,26 @@ public class HelpPaperScreen extends AbstractContainerScreen<HelpPaperMenu> {
 		this.imageHeight = 16;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("davebuildingmod:textures/screens/help_paper.png");
-
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
+	}
+
+	@Override
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		if (SteelHelperConditionProcedure.execute()) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("davebuildingmod:textures/screens/helpbook.png"));
-			this.blit(ms, this.leftPos + -12, this.topPos + -86, 0, 0, 146, 180, 146, 180);
+			guiGraphics.blit(IMAGE_0, this.leftPos + -13, this.topPos + -86, 0, 0, 146, 180, 146, 180);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -68,25 +68,13 @@ public class HelpPaperScreen extends AbstractContainerScreen<HelpPaperMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		if (SteelHelperConditionNotProcedure.execute())
-			this.font.draw(poseStack, "Nothing here, sadly...", 5, 4, -12829636);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.davebuildingmod.help_paper.label_nothing_here_sadly"), 5, 4, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 	}
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:red_steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:red_steel_wall",
+    "count": 6
+  }
+}

@@ -1,8 +1,10 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
-    "bottom": "davebuildingmod:blocks/lime_steel",
-    "top": "davebuildingmod:blocks/lime_steel",
-    "side": "davebuildingmod:blocks/lime_steel"
-  }
+    "particle": "davebuildingmod:block/lime_steel",
+    "bottom": "davebuildingmod:block/lime_steel",
+    "top": "davebuildingmod:block/lime_steel",
+    "side": "davebuildingmod:block/lime_steel"
+  },
+  "render_type": "solid"
 }

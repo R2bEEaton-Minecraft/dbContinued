@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/laboratorywallstripe-lime",
-    "up": "davebuildingmod:blocks/laboratorywallstripe-lime",
-    "north": "davebuildingmod:blocks/laboratorywallstripe-lime",
-    "east": "davebuildingmod:blocks/laboratorywallstripe-lime",
-    "south": "davebuildingmod:blocks/laboratorywallstripe-lime",
-    "west": "davebuildingmod:blocks/laboratorywallstripe-lime",
-    "particle": "davebuildingmod:blocks/laboratorywallstripe-lime"
-  }
+    "down": "davebuildingmod:block/laboratorywallstripe-lime",
+    "up": "davebuildingmod:block/laboratorywallstripe-lime",
+    "north": "davebuildingmod:block/laboratorywallstripe-lime",
+    "east": "davebuildingmod:block/laboratorywallstripe-lime",
+    "south": "davebuildingmod:block/laboratorywallstripe-lime",
+    "west": "davebuildingmod:block/laboratorywallstripe-lime",
+    "particle": "davebuildingmod:block/laboratorywallstripe-lime"
+  },
+  "render_type": "solid"
 }

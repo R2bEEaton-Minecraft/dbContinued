@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/death_block",
-    "up": "davebuildingmod:blocks/death_block",
-    "north": "davebuildingmod:blocks/death_block",
-    "east": "davebuildingmod:blocks/death_block",
-    "south": "davebuildingmod:blocks/death_block",
-    "west": "davebuildingmod:blocks/death_block",
-    "particle": "davebuildingmod:blocks/death_block"
-  }
+    "down": "davebuildingmod:block/death_block",
+    "up": "davebuildingmod:block/death_block",
+    "north": "davebuildingmod:block/death_block",
+    "east": "davebuildingmod:block/death_block",
+    "south": "davebuildingmod:block/death_block",
+    "west": "davebuildingmod:block/death_block",
+    "particle": "davebuildingmod:block/death_block"
+  },
+  "render_type": "solid"
 }

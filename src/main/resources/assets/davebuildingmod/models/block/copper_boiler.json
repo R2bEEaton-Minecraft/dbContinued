@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/copper_boiler",
-    "particle": "davebuildingmod:blocks/fluid_tank",
-    "cover": "davebuildingmod:blocks/copper_boiler"
-  }
+    "all": "davebuildingmod:block/copper_boiler",
+    "particle": "davebuildingmod:block/fluid_tank",
+    "cover": "davebuildingmod:block/copper_boiler"
+  },
+  "render_type": "solid"
 }

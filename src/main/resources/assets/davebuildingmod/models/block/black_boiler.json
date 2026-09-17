@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/black_boilder_front",
-    "particle": "davebuildingmod:blocks/black_tank",
-    "cover": "davebuildingmod:blocks/black_boilder_front"
-  }
+    "all": "davebuildingmod:block/black_boilder_front",
+    "particle": "davebuildingmod:block/black_tank",
+    "cover": "davebuildingmod:block/black_boilder_front"
+  },
+  "render_type": "solid"
 }

@@ -1,8 +1,10 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
-    "bottom": "davebuildingmod:blocks/light_gray_steel",
-    "top": "davebuildingmod:blocks/light_gray_steel",
-    "side": "davebuildingmod:blocks/light_gray_steel"
-  }
+    "particle": "davebuildingmod:block/light_gray_steel",
+    "bottom": "davebuildingmod:block/light_gray_steel",
+    "top": "davebuildingmod:block/light_gray_steel",
+    "side": "davebuildingmod:block/light_gray_steel"
+  },
+  "render_type": "solid"
 }

@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/blue_boiler",
-    "particle": "davebuildingmod:blocks/blue_steel_tank",
-    "cover": "davebuildingmod:blocks/blue_boiler"
-  }
+    "all": "davebuildingmod:block/blue_boiler",
+    "particle": "davebuildingmod:block/blue_steel_tank",
+    "cover": "davebuildingmod:block/blue_boiler"
+  },
+  "render_type": "solid"
 }

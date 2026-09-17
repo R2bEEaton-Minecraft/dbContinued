@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/yellowstripemiddle_block",
-    "up": "davebuildingmod:blocks/yellowstripemiddle_block",
-    "north": "davebuildingmod:blocks/yellowstripemiddle_block",
-    "east": "davebuildingmod:blocks/yellowstripemiddle_block",
-    "south": "davebuildingmod:blocks/yellowstripemiddle_block",
-    "west": "davebuildingmod:blocks/yellowstripemiddle_block",
-    "particle": "davebuildingmod:blocks/yellowstripemiddle_block"
-  }
+    "down": "davebuildingmod:block/yellowstripemiddle_block",
+    "up": "davebuildingmod:block/yellowstripemiddle_block",
+    "north": "davebuildingmod:block/yellowstripemiddle_block",
+    "east": "davebuildingmod:block/yellowstripemiddle_block",
+    "south": "davebuildingmod:block/yellowstripemiddle_block",
+    "west": "davebuildingmod:block/yellowstripemiddle_block",
+    "particle": "davebuildingmod:block/yellowstripemiddle_block"
+  },
+  "render_type": "solid"
 }

@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/thomas_face"
-  }
+    "layer0": "davebuildingmod:item/thomas_face"
+  },
+  "render_type": "translucent"
 }

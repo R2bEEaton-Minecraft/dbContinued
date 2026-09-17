@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stripped_spruce_log"
+    },
+    "b": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:half_lumber_border",
+    "count": 8
+  }
+}

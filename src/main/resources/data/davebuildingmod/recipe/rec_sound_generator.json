@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:basic_circuit"
+    },
+    "b": {
+      "item": "minecraft:note_block"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:sound_generator",
+    "count": 1
+  }
+}

@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/air_texture"
-  }
+    "layer0": "davebuildingmod:item/air_texture"
+  },
+  "render_type": "translucent"
 }

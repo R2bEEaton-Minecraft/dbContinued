@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:pink_steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:pink_steel_wall",
+    "count": 6
+  }
+}

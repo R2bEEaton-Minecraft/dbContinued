@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/white_steel_tank_top",
-    "up": "davebuildingmod:blocks/white_steel_tank_top",
-    "north": "davebuildingmod:blocks/white_steel_tank",
-    "east": "davebuildingmod:blocks/white_steel_tank",
-    "south": "davebuildingmod:blocks/white_steel_tank",
-    "west": "davebuildingmod:blocks/white_steel_tank",
-    "particle": "davebuildingmod:blocks/white_steel_tank_top"
-  }
+    "down": "davebuildingmod:block/white_steel_tank_top",
+    "up": "davebuildingmod:block/white_steel_tank_top",
+    "north": "davebuildingmod:block/white_steel_tank",
+    "east": "davebuildingmod:block/white_steel_tank",
+    "south": "davebuildingmod:block/white_steel_tank",
+    "west": "davebuildingmod:block/white_steel_tank",
+    "particle": "davebuildingmod:block/white_steel_tank_top"
+  },
+  "render_type": "solid"
 }

@@ -1,8 +1,10 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "davebuildingmod:blocks/ballast",
-    "top": "davebuildingmod:blocks/ballast",
-    "side": "davebuildingmod:blocks/ballast"
-  }
+    "particle": "davebuildingmod:block/ballast",
+    "bottom": "davebuildingmod:block/ballast",
+    "top": "davebuildingmod:block/ballast",
+    "side": "davebuildingmod:block/ballast"
+  },
+  "render_type": "solid"
 }

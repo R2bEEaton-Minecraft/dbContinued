@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/purple_screen",
-    "up": "davebuildingmod:blocks/purple_screen",
-    "north": "davebuildingmod:blocks/purple_screen",
-    "east": "davebuildingmod:blocks/purple_screen",
-    "south": "davebuildingmod:blocks/purple_screen",
-    "west": "davebuildingmod:blocks/purple_screen",
-    "particle": "davebuildingmod:blocks/purple_screen"
-  }
+    "down": "davebuildingmod:block/purple_screen",
+    "up": "davebuildingmod:block/purple_screen",
+    "north": "davebuildingmod:block/purple_screen",
+    "east": "davebuildingmod:block/purple_screen",
+    "south": "davebuildingmod:block/purple_screen",
+    "west": "davebuildingmod:block/purple_screen",
+    "particle": "davebuildingmod:block/purple_screen"
+  },
+  "render_type": "solid"
 }

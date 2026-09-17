@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/purple_boiler",
-    "particle": "davebuildingmod:blocks/gilded_purple_steel_tank",
-    "cover": "davebuildingmod:blocks/purple_boiler"
-  }
+    "all": "davebuildingmod:block/purple_boiler",
+    "particle": "davebuildingmod:block/gilded_purple_steel_tank",
+    "cover": "davebuildingmod:block/purple_boiler"
+  },
+  "render_type": "solid"
 }

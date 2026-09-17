@@ -1,8 +1,10 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "bottom": "davebuildingmod:blocks/orange_steel",
-    "top": "davebuildingmod:blocks/orange_steel",
-    "side": "davebuildingmod:blocks/orange_steel"
-  }
+    "particle": "davebuildingmod:block/orange_steel",
+    "bottom": "davebuildingmod:block/orange_steel",
+    "top": "davebuildingmod:block/orange_steel",
+    "side": "davebuildingmod:block/orange_steel"
+  },
+  "render_type": "solid"
 }

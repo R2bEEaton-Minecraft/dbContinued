@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_dye"
+    },
+    "b": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:oneway_sign",
+    "count": 4
+  }
+}

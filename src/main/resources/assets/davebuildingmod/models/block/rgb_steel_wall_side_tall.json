@@ -1,7 +1,8 @@
 {
   "parent": "block/template_wall_side_tall",
   "textures": {
-    "wall": "davebuildingmod:blocks/rgb_steel",
-    "particle": "davebuildingmod:blocks/rgb_steel"
-  }
+    "wall": "davebuildingmod:block/rgb_steel",
+    "particle": "davebuildingmod:block/rgb_steel"
+  },
+  "render_type": "solid"
 }

@@ -7,21 +7,19 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.buildingmod.init.DavebuildingmodModBlocks;
 
-import java.util.Map;
-
 public class GreenLightRedstoneProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide()) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == DavebuildingmodModBlocks.GREEN_LIGHT_OFF.get()) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == DavebuildingmodModBlocks.GREEN_LIGHT_OFF.get()) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = DavebuildingmodModBlocks.GREEN_LIGHT_ON.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
+					for (Property<?> _propertyOld : _bso.getProperties()) {
+						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+						if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
 							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
 							} catch (Exception e) {
 							}
 					}
@@ -29,14 +27,14 @@ public class GreenLightRedstoneProcedure {
 				}
 			} else {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = DavebuildingmodModBlocks.GREEN_LIGHT_OFF.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
+					for (Property<?> _propertyOld : _bso.getProperties()) {
+						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+						if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
 							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
 							} catch (Exception e) {
 							}
 					}

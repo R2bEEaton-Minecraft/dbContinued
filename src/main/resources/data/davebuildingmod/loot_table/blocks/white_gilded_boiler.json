@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "davebuildingmod:blocks/white_gilded_boiler",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "davebuildingmod:white_gilded_boiler"
+        }
+      ]
+    }
+  ]
+}

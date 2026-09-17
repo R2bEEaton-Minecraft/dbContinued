@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/gen_texture"
-  }
+    "layer0": "davebuildingmod:item/gen_texture"
+  },
+  "render_type": "cutout"
 }

@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="davebuildingmod"
+version="5.0"
+displayName="Dave's Building Extended"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/daves-building-extended"
+logoFile="logo.png"
+credits="L0rdzie, VanillaFac5, Create Mod Team, Mcreator"
+authors="SpaceDave1337"
+description="Just your average building mod, adds everything from Particle Generators to Track Buffers for Create 0.5"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.davebuildingmod]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.190,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.davebuildingmod]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.davebuildingmod]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.10,6.1.0)"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

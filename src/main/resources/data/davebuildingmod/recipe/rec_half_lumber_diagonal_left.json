@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "davebuildingmod:half_lumber_border"
+  },
+  "result": {
+    "id": "davebuildingmod:half_lumber_diagonal_left",
+    "count": 1
+  }
+}

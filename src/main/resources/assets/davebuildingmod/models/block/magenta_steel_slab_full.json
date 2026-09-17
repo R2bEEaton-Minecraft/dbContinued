@@ -1,8 +1,10 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "bottom": "davebuildingmod:blocks/magenta_steel",
-    "top": "davebuildingmod:blocks/magenta_steel",
-    "side": "davebuildingmod:blocks/magenta_steel"
-  }
+    "particle": "davebuildingmod:block/magenta_steel",
+    "bottom": "davebuildingmod:block/magenta_steel",
+    "top": "davebuildingmod:block/magenta_steel",
+    "side": "davebuildingmod:block/magenta_steel"
+  },
+  "render_type": "solid"
 }

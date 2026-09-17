@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "davebuildingmod:blocks/gray_funnel",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "davebuildingmod:gray_funnel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 85,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,25 +16,34 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 204,
-          "y": 80
+          "y": 80,
+          "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Insert Sound Card",
+          "name": "label_insert_sound_card",
+          "text": {
+            "fixedValue": "Insert Sound Card"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Insert Sound Card",
+          "hasShadow": false,
           "x": 168,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       }
     ],

@@ -1,8 +1,10 @@
 {
   "parent": "block/stairs",
   "textures": {
-    "bottom": "davebuildingmod:blocks/red_steel",
-    "top": "davebuildingmod:blocks/red_steel",
-    "side": "davebuildingmod:blocks/red_steel"
-  }
+    "particle": "davebuildingmod:block/red_steel",
+    "bottom": "davebuildingmod:block/red_steel",
+    "top": "davebuildingmod:block/red_steel",
+    "side": "davebuildingmod:block/red_steel"
+  },
+  "render_type": "solid"
 }

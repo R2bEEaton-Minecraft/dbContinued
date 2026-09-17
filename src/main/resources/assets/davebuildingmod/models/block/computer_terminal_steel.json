@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/steel_seemless",
-    "up": "davebuildingmod:blocks/steel_seemless",
-    "north": "davebuildingmod:blocks/computer_terminal_steel",
-    "east": "davebuildingmod:blocks/steel_seemless",
-    "south": "davebuildingmod:blocks/steel_seemless",
-    "west": "davebuildingmod:blocks/steel_seemless",
-    "particle": "davebuildingmod:blocks/steel_seemless"
-  }
+    "down": "davebuildingmod:block/steel_seemless",
+    "up": "davebuildingmod:block/steel_seemless",
+    "north": "davebuildingmod:block/computer_terminal_steel",
+    "east": "davebuildingmod:block/steel_seemless",
+    "south": "davebuildingmod:block/steel_seemless",
+    "west": "davebuildingmod:block/steel_seemless",
+    "particle": "davebuildingmod:block/steel_seemless"
+  },
+  "render_type": "solid"
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:rocky_dirt"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:rocky_dirt_slab",
+    "count": 6
+  }
+}

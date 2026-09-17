@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 85,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,17 +13,21 @@
       {
         "type": "label",
         "data": {
-          "text": "Nothing here, sadly...",
+          "name": "label_nothing_here_sadly",
+          "text": {
+            "fixedValue": "Nothing here, sadly..."
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "displayCondition": {
             "name": "SteelHelperConditionNot"
           },
-          "name": "Nothing here, sadly...",
           "x": 159,
-          "y": 116
+          "y": 116,
+          "locked": false
         }
       },
       {
@@ -34,9 +38,9 @@
           "displayCondition": {
             "name": "SteelHelperCondition"
           },
-          "name": "helpbook.png",
           "x": 141,
-          "y": 26
+          "y": 26,
+          "locked": false
         }
       }
     ],

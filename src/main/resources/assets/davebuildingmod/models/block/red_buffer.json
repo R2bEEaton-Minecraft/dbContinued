@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/buffer",
   "textures": {
-    "all": "davebuildingmod:blocks/red_steel",
-    "particle": "davebuildingmod:blocks/red_steel",
-    "0": "davebuildingmod:blocks/red_steel"
-  }
+    "all": "davebuildingmod:block/red_steel",
+    "particle": "davebuildingmod:block/red_steel",
+    "0": "davebuildingmod:block/red_steel"
+  },
+  "render_type": "cutout_mipped"
 }

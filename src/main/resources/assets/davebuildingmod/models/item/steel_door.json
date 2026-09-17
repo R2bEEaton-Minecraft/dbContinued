@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/door_item"
-  }
+    "layer0": "davebuildingmod:item/door_item"
+  },
+  "render_type": "translucent"
 }

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "davebuildingmod:vocal_empty"
+  },
+  "result": {
+    "id": "davebuildingmod:vocal_experiment",
+    "count": 1
+  }
+}

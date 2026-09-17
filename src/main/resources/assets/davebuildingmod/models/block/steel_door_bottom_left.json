@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "davebuildingmod:block/steel_seemless",
+    "bottom": "davebuildingmod:block/steel_seemless",
+    "top": "davebuildingmod:block/steel_doortop"
+  },
+  "render_type": "cutout"
+}

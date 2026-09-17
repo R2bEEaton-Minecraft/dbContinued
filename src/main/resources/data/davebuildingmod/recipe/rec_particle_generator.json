@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:advanced_circuit"
+    },
+    "b": {
+      "item": "minecraft:dispenser"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:particle_generator",
+    "count": 1
+  }
+}

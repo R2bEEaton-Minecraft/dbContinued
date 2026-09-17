@@ -1,9 +1,10 @@
 {
   "parent": "davebuildingmod:custom/woolchair",
   "textures": {
-    "all": "davebuildingmod:blocks/green_quilted_wool",
-    "particle": "davebuildingmod:blocks/green_quilted_wool",
-    "0": "davebuildingmod:blocks/stripped_oak_log",
-    "1": "davebuildingmod:blocks/green_quilted_wool"
-  }
+    "all": "davebuildingmod:block/green_quilted_wool",
+    "particle": "davebuildingmod:block/green_quilted_wool",
+    "0": "davebuildingmod:block/stripped_oak_log",
+    "1": "davebuildingmod:block/green_quilted_wool"
+  },
+  "render_type": "cutout_mipped"
 }

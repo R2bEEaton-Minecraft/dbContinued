@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/cut_laboratory_block",
-    "up": "davebuildingmod:blocks/cut_laboratory_block",
-    "north": "davebuildingmod:blocks/cut_laboratory_block",
-    "east": "davebuildingmod:blocks/cut_laboratory_block",
-    "south": "davebuildingmod:blocks/cut_laboratory_block",
-    "west": "davebuildingmod:blocks/cut_laboratory_block",
-    "particle": "davebuildingmod:blocks/cut_laboratory_block"
-  }
+    "down": "davebuildingmod:block/cut_laboratory_block",
+    "up": "davebuildingmod:block/cut_laboratory_block",
+    "north": "davebuildingmod:block/cut_laboratory_block",
+    "east": "davebuildingmod:block/cut_laboratory_block",
+    "south": "davebuildingmod:block/cut_laboratory_block",
+    "west": "davebuildingmod:block/cut_laboratory_block",
+    "particle": "davebuildingmod:block/cut_laboratory_block"
+  },
+  "render_type": "solid"
 }

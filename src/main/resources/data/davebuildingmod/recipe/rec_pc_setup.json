@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass_pane"
+    },
+    "b": {
+      "item": "davebuildingmod:basic_circuit"
+    },
+    "c": {
+      "item": "davebuildingmod:steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:pc_setup",
+    "count": 1
+  }
+}

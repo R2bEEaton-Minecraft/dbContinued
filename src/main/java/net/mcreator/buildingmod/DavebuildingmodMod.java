@@ -1,63 +1,95 @@
-/*
- *    MCreator note:
- *
- *    If you lock base mod element files, you can edit this file and it won't get overwritten.
- *    If you change your modid or package, you need to apply these changes to this file MANUALLY.
- *
- *    Settings in @Mod annotation WON'T be changed in case of the base mod element
- *    files lock too, so you need to set them manually here in such case.
- *
- *    If you do not lock base mod element files in Workspace settings, this file
- *    will be REGENERATED on each build.
- *
- */
 package net.mcreator.buildingmod;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.network.simple.SimpleChannel;
-import net.minecraftforge.network.NetworkRegistry;
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.neoforged.neoforge.network.handling.IPayloadHandler;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.IEventBus;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.TickTask;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.buildingmod.init.DavebuildingmodModTabs;
-import net.mcreator.buildingmod.init.DavebuildingmodModItems;
-import net.mcreator.buildingmod.init.DavebuildingmodModEntities;
-import net.mcreator.buildingmod.init.DavebuildingmodModBlocks;
-import net.mcreator.buildingmod.init.DavebuildingmodModBlockEntities;
+import net.mcreator.buildingmod.init.*;
 
-import java.util.function.Supplier;
-import java.util.function.Function;
-import java.util.function.BiConsumer;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.Queue;
+import java.util.PriorityQueue;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Comparator;
+
+import it.unimi.dsi.fastutil.ints.IntObjectPair;
+import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 
 @Mod("davebuildingmod")
 public class DavebuildingmodMod {
 	public static final Logger LOGGER = LogManager.getLogger(DavebuildingmodMod.class);
 	public static final String MODID = "davebuildingmod";
-	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION,
-			PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
-	private static int messageID = 0;
 
-	public DavebuildingmodMod() {
-		DavebuildingmodModTabs.load();
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		DavebuildingmodModBlocks.REGISTRY.register(bus);
-		DavebuildingmodModItems.REGISTRY.register(bus);
-		DavebuildingmodModEntities.REGISTRY.register(bus);
-		DavebuildingmodModBlockEntities.REGISTRY.register(bus);
-
+	public DavebuildingmodMod(IEventBus modEventBus) {
+		// Start of user code block mod constructor
+		net.neoforged.fml.ModList.get().getModContainerById(MODID).ifPresent(container -> container.registerConfig(net.neoforged.fml.config.ModConfig.Type.COMMON, Config.CONFIG_SPEC));
+		// End of user code block mod constructor
+		NeoForge.EVENT_BUS.register(this);
+		modEventBus.addListener(this::registerNetworking);
+		DavebuildingmodModSounds.REGISTRY.register(modEventBus);
+		DavebuildingmodModBlocks.REGISTRY.register(modEventBus);
+		DavebuildingmodModBlockEntities.REGISTRY.register(modEventBus);
+		DavebuildingmodModItems.REGISTRY.register(modEventBus);
+		DavebuildingmodModEntities.REGISTRY.register(modEventBus);
+		DavebuildingmodModTabs.REGISTRY.register(modEventBus);
+		DavebuildingmodModMenus.REGISTRY.register(modEventBus);
+		// Start of user code block mod init
+		// End of user code block mod init
 	}
 
-	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
-			BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
-		PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
-		messageID++;
+	// Start of user code block mod methods
+	// End of user code block mod methods
+	private static boolean networkingRegistered = false;
+	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();
+
+	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+	}
+
+	public static <T extends CustomPacketPayload> void addNetworkMessage(CustomPacketPayload.Type<T> id, StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+		if (networkingRegistered)
+			throw new IllegalStateException("Cannot register new network messages after networking has been registered");
+		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
+	}
+
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	private void registerNetworking(final RegisterPayloadHandlersEvent event) {
+		final PayloadRegistrar registrar = event.registrar(MODID);
+		MESSAGES.forEach((id, networkMessage) -> registrar.playBidirectional(id, ((NetworkMessage) networkMessage).reader(), ((NetworkMessage) networkMessage).handler()));
+		networkingRegistered = true;
+	}
+
+	private static final Queue<IntObjectPair<Runnable>> workToBeScheduled = new ConcurrentLinkedQueue<>();
+	private static final PriorityQueue<TickTask> workQueue = new PriorityQueue<>(Comparator.comparingInt(TickTask::getTick));
+
+	public static void queueServerWork(int delay, Runnable action) {
+		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
+			workToBeScheduled.add(new IntObjectImmutablePair<>(delay, action));
+	}
+
+	@SubscribeEvent
+	public void tick(ServerTickEvent.Post event) {
+		int currentTick = event.getServer().getTickCount();
+		IntObjectPair<Runnable> work;
+		while ((work = workToBeScheduled.poll()) != null) {
+			workQueue.add(new TickTask(currentTick + work.leftInt(), work.right()));
+		}
+		while (!workQueue.isEmpty() && currentTick >= workQueue.peek().getTick()) {
+			workQueue.poll().run();
+		}
 	}
 }

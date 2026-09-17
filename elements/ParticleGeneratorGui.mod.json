@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 85,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,73 +16,92 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 204,
-          "y": 98
+          "y": 98,
+          "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Particle Card",
+          "name": "label_particle_card",
+          "text": {
+            "fixedValue": "Particle Card"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Particle Card",
+          "hasShadow": false,
           "x": 177,
-          "y": 80
+          "y": 80,
+          "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Y-Offset",
+          "name": "label_yoffset",
+          "text": {
+            "fixedValue": "Y-Offset"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Y-Offset",
+          "hasShadow": false,
           "x": 141,
-          "y": 44
+          "y": 44,
+          "locked": false
         }
       },
       {
         "type": "textfield",
         "data": {
           "placeholder": "",
-          "width": 45,
-          "height": 20,
           "name": "YOffset",
+          "width": 45,
+          "height": 20,
           "x": 141,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Size",
+          "name": "label_size",
+          "text": {
+            "fixedValue": "Size"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Size",
+          "hasShadow": false,
           "x": 240,
-          "y": 44
+          "y": 44,
+          "locked": false
         }
       },
       {
         "type": "textfield",
         "data": {
           "placeholder": "",
+          "name": "Size",
           "width": 45,
           "height": 20,
-          "name": "Size",
           "x": 240,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       }
     ],

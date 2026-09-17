@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/lamp",
   "textures": {
-    "all": "davebuildingmod:blocks/r_lamp_on",
-    "particle": "davebuildingmod:blocks/r_lamp_on",
-    "0": "davebuildingmod:blocks/r_lamp_on"
-  }
+    "all": "davebuildingmod:block/r_lamp_on",
+    "particle": "davebuildingmod:block/r_lamp_on",
+    "0": "davebuildingmod:block/r_lamp_on"
+  },
+  "render_type": "cutout"
 }

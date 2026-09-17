@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/buffer",
   "textures": {
-    "all": "davebuildingmod:blocks/cyan_steel",
-    "particle": "davebuildingmod:blocks/cyan_steel",
-    "0": "davebuildingmod:blocks/cyan_steel"
-  }
+    "all": "davebuildingmod:block/cyan_steel",
+    "particle": "davebuildingmod:block/cyan_steel",
+    "0": "davebuildingmod:block/cyan_steel"
+  },
+  "render_type": "cutout_mipped"
 }

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/lime_steel",
-    "up": "davebuildingmod:blocks/lime_steel",
-    "north": "davebuildingmod:blocks/lime_steel",
-    "east": "davebuildingmod:blocks/lime_steel",
-    "south": "davebuildingmod:blocks/lime_steel",
-    "west": "davebuildingmod:blocks/lime_steel",
-    "particle": "davebuildingmod:blocks/lime_steel"
-  }
+    "down": "davebuildingmod:block/lime_steel",
+    "up": "davebuildingmod:block/lime_steel",
+    "north": "davebuildingmod:block/lime_steel",
+    "east": "davebuildingmod:block/lime_steel",
+    "south": "davebuildingmod:block/lime_steel",
+    "west": "davebuildingmod:block/lime_steel",
+    "particle": "davebuildingmod:block/lime_steel"
+  },
+  "render_type": "solid"
 }

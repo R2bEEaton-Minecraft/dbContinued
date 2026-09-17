@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/green_circuit_emtpy"
+    "layer0": "davebuildingmod:item/green_circuit_emtpy"
   }
 }

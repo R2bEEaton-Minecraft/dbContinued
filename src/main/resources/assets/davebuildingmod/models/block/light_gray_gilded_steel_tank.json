@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/light_gray_steel_tank_top",
-    "up": "davebuildingmod:blocks/light_gray_steel_tank_top",
-    "north": "davebuildingmod:blocks/gilded_light_gray_steel_tank",
-    "east": "davebuildingmod:blocks/gilded_light_gray_steel_tank",
-    "south": "davebuildingmod:blocks/gilded_light_gray_steel_tank",
-    "west": "davebuildingmod:blocks/gilded_light_gray_steel_tank",
-    "particle": "davebuildingmod:blocks/light_gray_steel_tank_top"
-  }
+    "down": "davebuildingmod:block/light_gray_steel_tank_top",
+    "up": "davebuildingmod:block/light_gray_steel_tank_top",
+    "north": "davebuildingmod:block/gilded_light_gray_steel_tank",
+    "east": "davebuildingmod:block/gilded_light_gray_steel_tank",
+    "south": "davebuildingmod:block/gilded_light_gray_steel_tank",
+    "west": "davebuildingmod:block/gilded_light_gray_steel_tank",
+    "particle": "davebuildingmod:block/light_gray_steel_tank_top"
+  },
+  "render_type": "solid"
 }

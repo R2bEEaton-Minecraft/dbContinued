@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:computer_terminal"
+    },
+    "b": {
+      "item": "minecraft:red_stained_glass_pane"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:isolinear_front_red",
+    "count": 2
+  }
+}

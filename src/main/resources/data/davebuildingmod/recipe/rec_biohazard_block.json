@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " b ",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_dye"
+    },
+    "b": {
+      "item": "davebuildingmod:steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:biohazard_block",
+    "count": 2
+  }
+}

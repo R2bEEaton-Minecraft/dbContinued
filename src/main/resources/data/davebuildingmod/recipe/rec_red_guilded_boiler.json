@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_nugget"
+    },
+    "b": {
+      "item": "davebuildingmod:red_boiler"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:red_guilded_boiler",
+    "count": 1
+  }
+}

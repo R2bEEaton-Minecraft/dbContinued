@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "davebuildingmod:steel_plating"
+  },
+  "addition": {
+    "item": "minecraft:magma_block"
+  },
+  "result": {
+    "id": "davebuildingmod:tungsten_carbite"
+  }
+}

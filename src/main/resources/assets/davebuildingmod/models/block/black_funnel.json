@@ -1,10 +1,11 @@
 {
   "parent": "davebuildingmod:custom/funnel",
   "textures": {
-    "all": "davebuildingmod:blocks/black_steel_port",
-    "particle": "davebuildingmod:blocks/black_steel_port",
-    "0": "davebuildingmod:blocks/black_steel",
-    "1": "davebuildingmod:blocks/black_steel_port",
-    "missing": "davebuildingmod:blocks/black_steel"
-  }
+    "all": "davebuildingmod:block/black_steel_port",
+    "particle": "davebuildingmod:block/black_steel_port",
+    "0": "davebuildingmod:block/black_steel",
+    "1": "davebuildingmod:block/black_steel_port",
+    "missing": "davebuildingmod:block/black_steel"
+  },
+  "render_type": "solid"
 }

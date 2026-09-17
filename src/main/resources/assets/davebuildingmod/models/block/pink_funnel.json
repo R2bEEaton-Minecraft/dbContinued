@@ -1,10 +1,11 @@
 {
   "parent": "davebuildingmod:custom/funnel",
   "textures": {
-    "all": "davebuildingmod:blocks/pink_steel_port",
-    "particle": "davebuildingmod:blocks/pink_steel_port",
-    "0": "davebuildingmod:blocks/pink_steel",
-    "1": "davebuildingmod:blocks/pink_steel_port",
-    "missing": "davebuildingmod:blocks/pink_steel"
-  }
+    "all": "davebuildingmod:block/pink_steel_port",
+    "particle": "davebuildingmod:block/pink_steel_port",
+    "0": "davebuildingmod:block/pink_steel",
+    "1": "davebuildingmod:block/pink_steel_port",
+    "missing": "davebuildingmod:block/pink_steel"
+  },
+  "render_type": "solid"
 }

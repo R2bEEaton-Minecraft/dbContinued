@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:black_steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:black_steel_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "davebuildingmod:steel_mesh_trapdoor",
+    "davebuildingmod:white_steel_trapdoor",
+    "davebuildingmod:magenta_steel_trapdoor",
+    "davebuildingmod:pink_steel_trapdoor",
+    "davebuildingmod:brown_steel_trapdoor",
+    "davebuildingmod:lime_steel_trapdoor",
+    "davebuildingmod:light_blue_steel_trapdoor",
+    "davebuildingmod:purple_steel_trapdoor",
+    "davebuildingmod:cyan_steel_trapdoor",
+    "davebuildingmod:gray_steel_trapdoor",
+    "davebuildingmod:steel_trapdoor",
+    "davebuildingmod:light_gray_steel_trapdoor",
+    "davebuildingmod:black_steel_trapdoor",
+    "davebuildingmod:yellow_steel_trapdoor",
+    "davebuildingmod:green_steel_trapdoor",
+    "davebuildingmod:orange_steel_trapdoor",
+    "davebuildingmod:red_steel_trapdoor",
+    "davebuildingmod:rgb_steel_trapdoor",
+    "davebuildingmod:blue_steel_trapdoor"
+  ]
+}

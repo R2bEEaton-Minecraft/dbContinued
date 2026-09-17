@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/red_steel",
-    "up": "davebuildingmod:blocks/red_steel",
-    "north": "davebuildingmod:blocks/red_steel",
-    "east": "davebuildingmod:blocks/red_steel",
-    "south": "davebuildingmod:blocks/red_steel",
-    "west": "davebuildingmod:blocks/red_steel",
-    "particle": "davebuildingmod:blocks/red_steel"
-  }
+    "down": "davebuildingmod:block/red_steel",
+    "up": "davebuildingmod:block/red_steel",
+    "north": "davebuildingmod:block/red_steel",
+    "east": "davebuildingmod:block/red_steel",
+    "south": "davebuildingmod:block/red_steel",
+    "west": "davebuildingmod:block/red_steel",
+    "particle": "davebuildingmod:block/red_steel"
+  },
+  "render_type": "solid"
 }

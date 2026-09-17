@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/ballast",
-    "up": "davebuildingmod:blocks/ballast",
-    "north": "davebuildingmod:blocks/ballast",
-    "east": "davebuildingmod:blocks/ballast",
-    "south": "davebuildingmod:blocks/ballast",
-    "west": "davebuildingmod:blocks/ballast",
-    "particle": "davebuildingmod:blocks/ballast"
-  }
+    "down": "davebuildingmod:block/ballast",
+    "up": "davebuildingmod:block/ballast",
+    "north": "davebuildingmod:block/ballast",
+    "east": "davebuildingmod:block/ballast",
+    "south": "davebuildingmod:block/ballast",
+    "west": "davebuildingmod:block/ballast",
+    "particle": "davebuildingmod:block/ballast"
+  },
+  "render_type": "solid"
 }

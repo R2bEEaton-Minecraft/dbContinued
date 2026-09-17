@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_dye"
+    },
+    "b": {
+      "item": "davebuildingmod:laboratory_block"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:laboratory_roman_1_red",
+    "count": 2
+  }
+}

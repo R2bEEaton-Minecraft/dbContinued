@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/oneway_sign"
-  }
+    "layer0": "davebuildingmod:item/oneway_sign"
+  },
+  "render_type": "translucent"
 }

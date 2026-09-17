@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/laboratoryvent",
-    "up": "davebuildingmod:blocks/laboratoryvent",
-    "north": "davebuildingmod:blocks/laboratoryvent",
-    "east": "davebuildingmod:blocks/laboratoryvent",
-    "south": "davebuildingmod:blocks/laboratoryvent",
-    "west": "davebuildingmod:blocks/laboratoryvent",
-    "particle": "davebuildingmod:blocks/laboratoryvent"
-  }
+    "down": "davebuildingmod:block/laboratoryvent",
+    "up": "davebuildingmod:block/laboratoryvent",
+    "north": "davebuildingmod:block/laboratoryvent",
+    "east": "davebuildingmod:block/laboratoryvent",
+    "south": "davebuildingmod:block/laboratoryvent",
+    "west": "davebuildingmod:block/laboratoryvent",
+    "particle": "davebuildingmod:block/laboratoryvent"
+  },
+  "render_type": "solid"
 }

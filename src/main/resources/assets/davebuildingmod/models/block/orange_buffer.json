@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/buffer",
   "textures": {
-    "all": "davebuildingmod:blocks/orange_steel",
-    "particle": "davebuildingmod:blocks/orange_steel",
-    "0": "davebuildingmod:blocks/orange_steel"
-  }
+    "all": "davebuildingmod:block/orange_steel",
+    "particle": "davebuildingmod:block/orange_steel",
+    "0": "davebuildingmod:block/orange_steel"
+  },
+  "render_type": "cutout_mipped"
 }

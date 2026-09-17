@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "davebuildingmod:vent_l_up",
+    "davebuildingmod:vent_t_up",
+    "davebuildingmod:vent_straight"
+  ]
+}

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/furnace_top",
-    "up": "davebuildingmod:blocks/furnace_top",
-    "north": "davebuildingmod:blocks/vocaliser_block",
-    "east": "davebuildingmod:blocks/furnace_side",
-    "south": "davebuildingmod:blocks/furnace_side",
-    "west": "davebuildingmod:blocks/furnace_side",
-    "particle": "davebuildingmod:blocks/furnace_top"
-  }
+    "down": "davebuildingmod:block/furnace_top",
+    "up": "davebuildingmod:block/furnace_top",
+    "north": "davebuildingmod:block/vocaliser_block",
+    "east": "davebuildingmod:block/furnace_side",
+    "south": "davebuildingmod:block/furnace_side",
+    "west": "davebuildingmod:block/furnace_side",
+    "particle": "davebuildingmod:block/furnace_top"
+  },
+  "render_type": "solid"
 }

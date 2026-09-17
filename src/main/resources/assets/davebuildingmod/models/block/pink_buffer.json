@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/buffer",
   "textures": {
-    "all": "davebuildingmod:blocks/pink_steel",
-    "particle": "davebuildingmod:blocks/pink_steel",
-    "0": "davebuildingmod:blocks/pink_steel"
-  }
+    "all": "davebuildingmod:block/pink_steel",
+    "particle": "davebuildingmod:block/pink_steel",
+    "0": "davebuildingmod:block/pink_steel"
+  },
+  "render_type": "cutout_mipped"
 }

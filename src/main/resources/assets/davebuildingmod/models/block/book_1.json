@@ -1,9 +1,10 @@
 {
   "parent": "davebuildingmod:custom/book1",
   "textures": {
-    "all": "davebuildingmod:blocks/books",
-    "particle": "davebuildingmod:blocks/books",
-    "0": "davebuildingmod:blocks/books",
-    "missing": "davebuildingmod:blocks/books"
-  }
+    "all": "davebuildingmod:block/books",
+    "particle": "davebuildingmod:block/books",
+    "0": "davebuildingmod:block/books",
+    "missing": "davebuildingmod:block/books"
+  },
+  "render_type": "cutout_mipped"
 }

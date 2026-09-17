@@ -1,10 +1,11 @@
 {
   "parent": "davebuildingmod:custom/funnel",
   "textures": {
-    "all": "davebuildingmod:blocks/magenta_steel_port",
-    "particle": "davebuildingmod:blocks/magenta_steel_port",
-    "0": "davebuildingmod:blocks/magenta_steel",
-    "1": "davebuildingmod:blocks/magenta_steel_port",
-    "missing": "davebuildingmod:blocks/magenta_steel"
-  }
+    "all": "davebuildingmod:block/magenta_steel_port",
+    "particle": "davebuildingmod:block/magenta_steel_port",
+    "0": "davebuildingmod:block/magenta_steel",
+    "1": "davebuildingmod:block/magenta_steel_port",
+    "missing": "davebuildingmod:block/magenta_steel"
+  },
+  "render_type": "solid"
 }

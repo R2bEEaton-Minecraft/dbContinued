@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/buffer",
   "textures": {
-    "all": "davebuildingmod:blocks/rgb_steel",
-    "particle": "davebuildingmod:blocks/rgb_steel",
-    "0": "davebuildingmod:blocks/rgb_steel"
-  }
+    "all": "davebuildingmod:block/rgb_steel",
+    "particle": "davebuildingmod:block/rgb_steel",
+    "0": "davebuildingmod:block/rgb_steel"
+  },
+  "render_type": "cutout_mipped"
 }

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/purple_steel_tank_top",
-    "up": "davebuildingmod:blocks/purple_steel_tank_top",
-    "north": "davebuildingmod:blocks/purple_steel_tank",
-    "east": "davebuildingmod:blocks/purple_steel_tank",
-    "south": "davebuildingmod:blocks/purple_steel_tank",
-    "west": "davebuildingmod:blocks/purple_steel_tank",
-    "particle": "davebuildingmod:blocks/purple_steel_tank_top"
-  }
+    "down": "davebuildingmod:block/purple_steel_tank_top",
+    "up": "davebuildingmod:block/purple_steel_tank_top",
+    "north": "davebuildingmod:block/purple_steel_tank",
+    "east": "davebuildingmod:block/purple_steel_tank",
+    "south": "davebuildingmod:block/purple_steel_tank",
+    "west": "davebuildingmod:block/purple_steel_tank",
+    "particle": "davebuildingmod:block/purple_steel_tank_top"
+  },
+  "render_type": "solid"
 }

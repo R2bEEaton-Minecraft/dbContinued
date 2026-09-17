@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/no_entry_sign"
-  }
+    "layer0": "davebuildingmod:item/no_entry_sign"
+  },
+  "render_type": "translucent"
 }

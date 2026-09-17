@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:steel_seemless"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:steel_trapdoor",
+    "count": 3
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:cyan_steel_plating",
+    "count": 8
+  }
+}

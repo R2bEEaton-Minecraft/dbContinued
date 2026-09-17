@@ -1,8 +1,10 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "davebuildingmod:blocks/brown_steel",
-    "top": "davebuildingmod:blocks/brown_steel",
-    "side": "davebuildingmod:blocks/brown_steel"
-  }
+    "particle": "davebuildingmod:block/brown_steel",
+    "bottom": "davebuildingmod:block/brown_steel",
+    "top": "davebuildingmod:block/brown_steel",
+    "side": "davebuildingmod:block/brown_steel"
+  },
+  "render_type": "solid"
 }

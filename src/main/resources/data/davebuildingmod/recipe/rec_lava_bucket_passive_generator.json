@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    {
+      "item": "davebuildingmod:soft_air"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:lava_bucket_passive_generator",
+    "count": 1
+  }
+}

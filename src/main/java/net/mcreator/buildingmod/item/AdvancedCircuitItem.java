@@ -1,20 +1,23 @@
-
 package net.mcreator.buildingmod.item;
 
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-
-import net.mcreator.buildingmod.init.DavebuildingmodModTabs;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundEvent;
 
 public class AdvancedCircuitItem extends Item {
 	public AdvancedCircuitItem() {
-		super(new Item.Properties().tab(DavebuildingmodModTabs.TAB_DAVES_MOD_TAB).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties());
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.EAT;
+	}
+
+	@Override
+	public SoundEvent getEatingSound() {
+		return SoundEvents.EMPTY;
 	}
 }

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/halflumber_brick_border",
-    "up": "davebuildingmod:blocks/halflumber_brick_border",
-    "north": "davebuildingmod:blocks/halflumber_brick_border",
-    "east": "davebuildingmod:blocks/halflumber_brick_border",
-    "south": "davebuildingmod:blocks/halflumber_brick_border",
-    "west": "davebuildingmod:blocks/halflumber_brick_border",
-    "particle": "davebuildingmod:blocks/halflumber_brick_border"
-  }
+    "down": "davebuildingmod:block/halflumber_brick_border",
+    "up": "davebuildingmod:block/halflumber_brick_border",
+    "north": "davebuildingmod:block/halflumber_brick_border",
+    "east": "davebuildingmod:block/halflumber_brick_border",
+    "south": "davebuildingmod:block/halflumber_brick_border",
+    "west": "davebuildingmod:block/halflumber_brick_border",
+    "particle": "davebuildingmod:block/halflumber_brick_border"
+  },
+  "render_type": "solid"
 }

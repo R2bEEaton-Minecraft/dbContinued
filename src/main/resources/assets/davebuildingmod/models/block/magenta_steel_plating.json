@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/magenta_steel",
-    "up": "davebuildingmod:blocks/magenta_steel",
-    "north": "davebuildingmod:blocks/magenta_steel",
-    "east": "davebuildingmod:blocks/magenta_steel",
-    "south": "davebuildingmod:blocks/magenta_steel",
-    "west": "davebuildingmod:blocks/magenta_steel",
-    "particle": "davebuildingmod:blocks/magenta_steel"
-  }
+    "down": "davebuildingmod:block/magenta_steel",
+    "up": "davebuildingmod:block/magenta_steel",
+    "north": "davebuildingmod:block/magenta_steel",
+    "east": "davebuildingmod:block/magenta_steel",
+    "south": "davebuildingmod:block/magenta_steel",
+    "west": "davebuildingmod:block/magenta_steel",
+    "particle": "davebuildingmod:block/magenta_steel"
+  },
+  "render_type": "solid"
 }

@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/buffer",
   "textures": {
-    "all": "davebuildingmod:blocks/lime_steel",
-    "particle": "davebuildingmod:blocks/lime_steel",
-    "0": "davebuildingmod:blocks/lime_steel"
-  }
+    "all": "davebuildingmod:block/lime_steel",
+    "particle": "davebuildingmod:block/lime_steel",
+    "0": "davebuildingmod:block/lime_steel"
+  },
+  "render_type": "cutout_mipped"
 }

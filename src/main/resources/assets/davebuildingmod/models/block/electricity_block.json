@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/electricity_block",
-    "up": "davebuildingmod:blocks/electricity_block",
-    "north": "davebuildingmod:blocks/electricity_block",
-    "east": "davebuildingmod:blocks/electricity_block",
-    "south": "davebuildingmod:blocks/electricity_block",
-    "west": "davebuildingmod:blocks/electricity_block",
-    "particle": "davebuildingmod:blocks/electricity_block"
-  }
+    "down": "davebuildingmod:block/electricity_block",
+    "up": "davebuildingmod:block/electricity_block",
+    "north": "davebuildingmod:block/electricity_block",
+    "east": "davebuildingmod:block/electricity_block",
+    "south": "davebuildingmod:block/electricity_block",
+    "west": "davebuildingmod:block/electricity_block",
+    "particle": "davebuildingmod:block/electricity_block"
+  },
+  "render_type": "solid"
 }

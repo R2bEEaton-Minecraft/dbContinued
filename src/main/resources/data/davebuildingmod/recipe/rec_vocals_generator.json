@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:vocal_empty"
+    },
+    "b": {
+      "item": "minecraft:observer"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:vocals_generator",
+    "count": 1
+  }
+}

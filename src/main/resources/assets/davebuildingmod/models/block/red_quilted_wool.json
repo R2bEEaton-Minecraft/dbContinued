@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/red_quilted_wool",
-    "up": "davebuildingmod:blocks/red_quilted_wool",
-    "north": "davebuildingmod:blocks/red_quilted_wool",
-    "east": "davebuildingmod:blocks/red_quilted_wool",
-    "south": "davebuildingmod:blocks/red_quilted_wool",
-    "west": "davebuildingmod:blocks/red_quilted_wool",
-    "particle": "davebuildingmod:blocks/red_quilted_wool"
-  }
+    "down": "davebuildingmod:block/red_quilted_wool",
+    "up": "davebuildingmod:block/red_quilted_wool",
+    "north": "davebuildingmod:block/red_quilted_wool",
+    "east": "davebuildingmod:block/red_quilted_wool",
+    "south": "davebuildingmod:block/red_quilted_wool",
+    "west": "davebuildingmod:block/red_quilted_wool",
+    "particle": "davebuildingmod:block/red_quilted_wool"
+  },
+  "render_type": "solid"
 }

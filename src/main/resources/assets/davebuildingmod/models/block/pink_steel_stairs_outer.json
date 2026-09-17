@@ -1,8 +1,10 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
-    "bottom": "davebuildingmod:blocks/pink_steel",
-    "top": "davebuildingmod:blocks/pink_steel",
-    "side": "davebuildingmod:blocks/pink_steel"
-  }
+    "particle": "davebuildingmod:block/pink_steel",
+    "bottom": "davebuildingmod:block/pink_steel",
+    "top": "davebuildingmod:block/pink_steel",
+    "side": "davebuildingmod:block/pink_steel"
+  },
+  "render_type": "solid"
 }

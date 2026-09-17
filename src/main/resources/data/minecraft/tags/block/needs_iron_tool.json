@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "davebuildingmod:laboratory_left_arrow_lime",
+    "davebuildingmod:laboratory_right_arrow_lime",
+    "davebuildingmod:laboratory_left_arrow_red",
+    "davebuildingmod:laboratory_block",
+    "davebuildingmod:laboratory_roman_10",
+    "davebuildingmod:laboratory_roman_5_red",
+    "davebuildingmod:laboratory_right_arrow_red",
+    "davebuildingmod:laboratory_roman_1",
+    "davebuildingmod:laboratory_roman_5_lime",
+    "davebuildingmod:tungsten_carbite",
+    "davebuildingmod:laboratory_right_arrow",
+    "davebuildingmod:laboratory_roman_5",
+    "davebuildingmod:laboratory_roman_1_lime",
+    "davebuildingmod:laboratory_roman_10_red",
+    "davebuildingmod:laboratory_left_arrow",
+    "davebuildingmod:laboratory_vent",
+    "davebuildingmod:laboratory_stripe_red",
+    "davebuildingmod:laboratory_stripe_lime",
+    "davebuildingmod:laboratory_roman_1_red",
+    "davebuildingmod:laboratory_roman_10_lime",
+    "davebuildingmod:laboratory_panel",
+    "davebuildingmod:laboratory_stripe"
+  ]
+}

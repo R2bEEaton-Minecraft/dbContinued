@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/tungsten_carbite",
-    "up": "davebuildingmod:blocks/tungsten_carbite",
-    "north": "davebuildingmod:blocks/tungsten_carbite",
-    "east": "davebuildingmod:blocks/tungsten_carbite",
-    "south": "davebuildingmod:blocks/tungsten_carbite",
-    "west": "davebuildingmod:blocks/tungsten_carbite",
-    "particle": "davebuildingmod:blocks/tungsten_carbite"
-  }
+    "down": "davebuildingmod:block/tungsten_carbite",
+    "up": "davebuildingmod:block/tungsten_carbite",
+    "north": "davebuildingmod:block/tungsten_carbite",
+    "east": "davebuildingmod:block/tungsten_carbite",
+    "south": "davebuildingmod:block/tungsten_carbite",
+    "west": "davebuildingmod:block/tungsten_carbite",
+    "particle": "davebuildingmod:block/tungsten_carbite"
+  },
+  "render_type": "solid"
 }

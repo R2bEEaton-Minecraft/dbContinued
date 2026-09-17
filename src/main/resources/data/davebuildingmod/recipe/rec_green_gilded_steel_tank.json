@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_nugget"
+    },
+    "b": {
+      "item": "davebuildingmod:green_steel_tank"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:green_gilded_steel_tank",
+    "count": 1
+  }
+}

@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/lamp",
   "textures": {
-    "all": "davebuildingmod:blocks/y_lamp",
-    "particle": "davebuildingmod:blocks/y_lamp",
-    "0": "davebuildingmod:blocks/y_lamp"
-  }
+    "all": "davebuildingmod:block/y_lamp",
+    "particle": "davebuildingmod:block/y_lamp",
+    "0": "davebuildingmod:block/y_lamp"
+  },
+  "render_type": "cutout"
 }

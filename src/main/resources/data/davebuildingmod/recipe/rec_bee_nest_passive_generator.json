@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "davebuildingmod:red_circuit_bee_nest"
+    },
+    {
+      "item": "davebuildingmod:soft_air"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:bee_nest_passive_generator",
+    "count": 1
+  }
+}

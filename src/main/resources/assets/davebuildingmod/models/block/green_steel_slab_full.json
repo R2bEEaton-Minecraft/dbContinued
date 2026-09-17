@@ -1,8 +1,10 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "bottom": "davebuildingmod:blocks/green_steel",
-    "top": "davebuildingmod:blocks/green_steel",
-    "side": "davebuildingmod:blocks/green_steel"
-  }
+    "particle": "davebuildingmod:block/green_steel",
+    "bottom": "davebuildingmod:block/green_steel",
+    "top": "davebuildingmod:block/green_steel",
+    "side": "davebuildingmod:block/green_steel"
+  },
+  "render_type": "solid"
 }

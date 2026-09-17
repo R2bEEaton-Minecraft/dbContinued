@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    },
+    {
+      "item": "davebuildingmod:steel_plating"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:pink_steel_plating",
+    "count": 8
+  }
+}

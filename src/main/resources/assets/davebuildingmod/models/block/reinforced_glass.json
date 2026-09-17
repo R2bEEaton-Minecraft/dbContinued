@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/hardenedglass",
-    "up": "davebuildingmod:blocks/hardenedglass",
-    "north": "davebuildingmod:blocks/hardenedglass",
-    "east": "davebuildingmod:blocks/hardenedglass",
-    "south": "davebuildingmod:blocks/hardenedglass",
-    "west": "davebuildingmod:blocks/hardenedglass",
-    "particle": "davebuildingmod:blocks/hardenedglass"
-  }
+    "down": "davebuildingmod:block/hardenedglass",
+    "up": "davebuildingmod:block/hardenedglass",
+    "north": "davebuildingmod:block/hardenedglass",
+    "east": "davebuildingmod:block/hardenedglass",
+    "south": "davebuildingmod:block/hardenedglass",
+    "west": "davebuildingmod:block/hardenedglass",
+    "particle": "davebuildingmod:block/hardenedglass"
+  },
+  "render_type": "cutout"
 }

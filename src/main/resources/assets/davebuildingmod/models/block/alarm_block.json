@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/alarm_block",
-    "up": "davebuildingmod:blocks/alarm_block",
-    "north": "davebuildingmod:blocks/alarm_block",
-    "east": "davebuildingmod:blocks/alarm_block",
-    "south": "davebuildingmod:blocks/alarm_block",
-    "west": "davebuildingmod:blocks/alarm_block",
-    "particle": "davebuildingmod:blocks/alarm_block"
-  }
+    "down": "davebuildingmod:block/alarm_block",
+    "up": "davebuildingmod:block/alarm_block",
+    "north": "davebuildingmod:block/alarm_block",
+    "east": "davebuildingmod:block/alarm_block",
+    "south": "davebuildingmod:block/alarm_block",
+    "west": "davebuildingmod:block/alarm_block",
+    "particle": "davebuildingmod:block/alarm_block"
+  },
+  "render_type": "solid"
 }

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/soundblock_top",
-    "up": "davebuildingmod:blocks/soundblock_top",
-    "north": "davebuildingmod:blocks/soundblock_side",
-    "east": "davebuildingmod:blocks/soundblock_top",
-    "south": "davebuildingmod:blocks/soundblock_top",
-    "west": "davebuildingmod:blocks/soundblock_top",
-    "particle": "davebuildingmod:blocks/soundblock_top"
-  }
+    "down": "davebuildingmod:block/soundblock_top",
+    "up": "davebuildingmod:block/soundblock_top",
+    "north": "davebuildingmod:block/soundblock_side",
+    "east": "davebuildingmod:block/soundblock_top",
+    "south": "davebuildingmod:block/soundblock_top",
+    "west": "davebuildingmod:block/soundblock_top",
+    "particle": "davebuildingmod:block/soundblock_top"
+  },
+  "render_type": "solid"
 }

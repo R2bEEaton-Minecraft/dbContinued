@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/trainsign",
   "textures": {
-    "all": "davebuildingmod:blocks/arrow_return_sign",
-    "particle": "davebuildingmod:blocks/arrow_return_sign",
-    "0": "davebuildingmod:blocks/arrow_return_sign"
-  }
+    "all": "davebuildingmod:block/arrow_return_sign",
+    "particle": "davebuildingmod:block/arrow_return_sign",
+    "0": "davebuildingmod:block/arrow_return_sign"
+  },
+  "render_type": "solid"
 }

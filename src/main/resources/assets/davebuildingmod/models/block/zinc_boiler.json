@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/zinc_boiler",
-    "particle": "davebuildingmod:blocks/zinc_tank",
-    "cover": "davebuildingmod:blocks/zinc_boiler"
-  }
+    "all": "davebuildingmod:block/zinc_boiler",
+    "particle": "davebuildingmod:block/zinc_tank",
+    "cover": "davebuildingmod:block/zinc_boiler"
+  },
+  "render_type": "solid"
 }

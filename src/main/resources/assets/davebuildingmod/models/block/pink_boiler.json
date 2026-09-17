@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/pink_boiler",
-    "particle": "davebuildingmod:blocks/pink_steel_tank",
-    "cover": "davebuildingmod:blocks/pink_boiler"
-  }
+    "all": "davebuildingmod:block/pink_boiler",
+    "particle": "davebuildingmod:block/pink_steel_tank",
+    "cover": "davebuildingmod:block/pink_boiler"
+  },
+  "render_type": "solid"
 }

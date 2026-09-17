@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/superwhite",
-    "up": "davebuildingmod:blocks/superwhite",
-    "north": "davebuildingmod:blocks/superwhite",
-    "east": "davebuildingmod:blocks/superwhite",
-    "south": "davebuildingmod:blocks/superwhite",
-    "west": "davebuildingmod:blocks/superwhite",
-    "particle": "davebuildingmod:blocks/superwhite"
-  }
+    "down": "davebuildingmod:block/superwhite",
+    "up": "davebuildingmod:block/superwhite",
+    "north": "davebuildingmod:block/superwhite",
+    "east": "davebuildingmod:block/superwhite",
+    "south": "davebuildingmod:block/superwhite",
+    "west": "davebuildingmod:block/superwhite",
+    "particle": "davebuildingmod:block/superwhite"
+  },
+  "render_type": "solid"
 }

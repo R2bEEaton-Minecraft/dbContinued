@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/trainsign",
   "textures": {
-    "all": "davebuildingmod:blocks/no_entry_sign",
-    "particle": "davebuildingmod:blocks/no_entry_sign",
-    "0": "davebuildingmod:blocks/no_entry_sign"
-  }
+    "all": "davebuildingmod:block/no_entry_sign",
+    "particle": "davebuildingmod:block/no_entry_sign",
+    "0": "davebuildingmod:block/no_entry_sign"
+  },
+  "render_type": "solid"
 }

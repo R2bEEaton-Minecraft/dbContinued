@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/brass_boiler",
-    "particle": "davebuildingmod:blocks/brasstank",
-    "cover": "davebuildingmod:blocks/brass_boiler"
-  }
+    "all": "davebuildingmod:block/brass_boiler",
+    "particle": "davebuildingmod:block/brasstank",
+    "cover": "davebuildingmod:block/brass_boiler"
+  },
+  "render_type": "solid"
 }

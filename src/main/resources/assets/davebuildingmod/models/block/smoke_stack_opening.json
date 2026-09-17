@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/trainsign",
   "textures": {
-    "all": "davebuildingmod:blocks/smoke_end",
-    "particle": "davebuildingmod:blocks/smoke_end",
-    "0": "davebuildingmod:blocks/smoke_end"
-  }
+    "all": "davebuildingmod:block/smoke_end",
+    "particle": "davebuildingmod:block/smoke_end",
+    "0": "davebuildingmod:block/smoke_end"
+  },
+  "render_type": "solid"
 }

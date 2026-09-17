@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "davebuildingmod:yellow_steel_plating"
+  },
+  "result": {
+    "id": "davebuildingmod:yellow_buffer",
+    "count": 2
+  }
+}

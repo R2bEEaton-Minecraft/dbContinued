@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/skeleton2",
   "textures": {
-    "all": "davebuildingmod:blocks/skeleton",
-    "particle": "davebuildingmod:blocks/skeleton",
-    "0": "davebuildingmod:blocks/skeleton"
-  }
+    "all": "davebuildingmod:block/skeleton",
+    "particle": "davebuildingmod:block/skeleton",
+    "0": "davebuildingmod:block/skeleton"
+  },
+  "render_type": "cutout"
 }

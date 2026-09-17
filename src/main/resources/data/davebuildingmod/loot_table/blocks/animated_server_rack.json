@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "davebuildingmod:blocks/animated_server_rack",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "davebuildingmod:animated_server_rack"
+        }
+      ]
+    }
+  ]
+}

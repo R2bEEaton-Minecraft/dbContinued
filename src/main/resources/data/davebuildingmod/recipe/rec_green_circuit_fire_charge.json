@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:fire_charge"
+    },
+    {
+      "item": "davebuildingmod:basic_circuit"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:green_circuit_fire_charge",
+    "count": 1
+  }
+}

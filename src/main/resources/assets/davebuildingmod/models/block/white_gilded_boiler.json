@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/white_boiler",
-    "particle": "davebuildingmod:blocks/gilded_white_steel_tank",
-    "cover": "davebuildingmod:blocks/white_boiler"
-  }
+    "all": "davebuildingmod:block/white_boiler",
+    "particle": "davebuildingmod:block/gilded_white_steel_tank",
+    "cover": "davebuildingmod:block/white_boiler"
+  },
+  "render_type": "solid"
 }

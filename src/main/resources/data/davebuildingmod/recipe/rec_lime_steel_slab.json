@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:lime_steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:lime_steel_slab",
+    "count": 6
+  }
+}

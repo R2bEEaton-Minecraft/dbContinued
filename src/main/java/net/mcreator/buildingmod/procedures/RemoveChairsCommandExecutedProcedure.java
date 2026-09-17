@@ -11,23 +11,13 @@ import java.util.Comparator;
 
 public class RemoveChairsCommandExecutedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (((Entity) world.getEntitiesOfClass(ChairEntity.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
-			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-			}
-		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof ChairEntity == true) {
-			if (!((Entity) world.getEntitiesOfClass(ChairEntity.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-					.sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.isClientSide())
-				((Entity) world.getEntitiesOfClass(ChairEntity.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-						.sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).discard();
+		if ((findEntityInWorldRange(world, ChairEntity.class, x, y, z, 5)) instanceof ChairEntity == true) {
+			if (!(findEntityInWorldRange(world, ChairEntity.class, x, y, z, 5)).level().isClientSide())
+				(findEntityInWorldRange(world, ChairEntity.class, x, y, z, 5)).discard();
 		}
+	}
+
+	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
+		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
 	}
 }

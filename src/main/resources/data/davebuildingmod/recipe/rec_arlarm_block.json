@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " b ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_dye"
+    },
+    "b": {
+      "item": "davebuildingmod:steel_plating"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:alarm_block",
+    "count": 2
+  }
+}

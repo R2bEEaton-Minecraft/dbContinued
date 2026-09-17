@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:arrow"
+    },
+    "b": {
+      "item": "davebuildingmod:strippedblock_horizontal"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:yellow_arrow_left",
+    "count": 1
+  }
+}

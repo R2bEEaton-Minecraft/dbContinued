@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "davebuildingmod:blocks/brown_steel_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "davebuildingmod:brown_steel_wall"
+        }
+      ]
+    }
+  ]
+}

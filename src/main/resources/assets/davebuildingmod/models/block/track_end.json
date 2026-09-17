@@ -1,10 +1,11 @@
 {
   "parent": "davebuildingmod:custom/create_track_end",
   "textures": {
-    "all": "davebuildingmod:blocks/standard_track",
-    "particle": "davebuildingmod:blocks/standard_track",
-    "1": "davebuildingmod:blocks/standard_track",
-    "2": "davebuildingmod:blocks/standard_track_mip",
-    "missing": "davebuildingmod:blocks/polished_andesite"
-  }
+    "all": "davebuildingmod:block/standard_track",
+    "particle": "davebuildingmod:block/standard_track",
+    "1": "davebuildingmod:block/standard_track",
+    "2": "davebuildingmod:block/standard_track_mip",
+    "missing": "davebuildingmod:block/polished_andesite"
+  },
+  "render_type": "translucent"
 }

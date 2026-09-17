@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:campfire"
+    },
+    {
+      "item": "davebuildingmod:soft_air"
+    }
+  ],
+  "result": {
+    "id": "davebuildingmod:campfire_passive_generator",
+    "count": 1
+  }
+}

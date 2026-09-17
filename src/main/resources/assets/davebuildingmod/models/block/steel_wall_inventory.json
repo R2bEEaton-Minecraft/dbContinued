@@ -1,7 +1,8 @@
 {
   "parent": "block/wall_inventory",
   "textures": {
-    "wall": "davebuildingmod:blocks/steel_seemless",
-    "particle": "davebuildingmod:blocks/steel_seemless"
-  }
+    "wall": "davebuildingmod:block/steel_seemless",
+    "particle": "davebuildingmod:block/steel_seemless"
+  },
+  "render_type": "cutout"
 }

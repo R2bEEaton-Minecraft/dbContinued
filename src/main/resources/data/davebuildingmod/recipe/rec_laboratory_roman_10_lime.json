@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " b ",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lime_dye"
+    },
+    "b": {
+      "item": "davebuildingmod:laboratory_block"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:laboratory_roman_10_lime",
+    "count": 2
+  }
+}

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/air",
-    "up": "davebuildingmod:blocks/air",
-    "north": "davebuildingmod:blocks/air",
-    "east": "davebuildingmod:blocks/air",
-    "south": "davebuildingmod:blocks/air",
-    "west": "davebuildingmod:blocks/air",
-    "particle": "davebuildingmod:blocks/air"
-  }
+    "down": "davebuildingmod:block/air",
+    "up": "davebuildingmod:block/air",
+    "north": "davebuildingmod:block/air",
+    "east": "davebuildingmod:block/air",
+    "south": "davebuildingmod:block/air",
+    "west": "davebuildingmod:block/air",
+    "particle": "davebuildingmod:block/air"
+  },
+  "render_type": "cutout"
 }

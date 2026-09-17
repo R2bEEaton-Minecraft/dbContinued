@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "davebuildingmod:steel_pillar"
+    },
+    "b": {
+      "item": "davebuildingmod:steel_frame"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:steel_girder",
+    "count": 6
+  }
+}

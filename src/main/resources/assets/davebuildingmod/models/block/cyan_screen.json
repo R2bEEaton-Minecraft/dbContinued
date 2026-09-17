@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/cyan_screen",
-    "up": "davebuildingmod:blocks/cyan_screen",
-    "north": "davebuildingmod:blocks/cyan_screen",
-    "east": "davebuildingmod:blocks/cyan_screen",
-    "south": "davebuildingmod:blocks/cyan_screen",
-    "west": "davebuildingmod:blocks/cyan_screen",
-    "particle": "davebuildingmod:blocks/cyan_screen"
-  }
+    "down": "davebuildingmod:block/cyan_screen",
+    "up": "davebuildingmod:block/cyan_screen",
+    "north": "davebuildingmod:block/cyan_screen",
+    "east": "davebuildingmod:block/cyan_screen",
+    "south": "davebuildingmod:block/cyan_screen",
+    "west": "davebuildingmod:block/cyan_screen",
+    "particle": "davebuildingmod:block/cyan_screen"
+  },
+  "render_type": "solid"
 }

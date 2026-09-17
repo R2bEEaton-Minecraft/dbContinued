@@ -1,45 +1,58 @@
-
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.buildingmod.init;
 
-import net.minecraftforge.network.IContainerFactory;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.MenuType;
-import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.buildingmod.world.inventory.VocalsGeneratorGuiMenu;
 import net.mcreator.buildingmod.world.inventory.SoundGeneratorGuiMenu;
 import net.mcreator.buildingmod.world.inventory.ParticleGeneratorGuiMenu;
 import net.mcreator.buildingmod.world.inventory.HelpPaperMenu;
+import net.mcreator.buildingmod.network.MenuStateUpdateMessage;
+import net.mcreator.buildingmod.DavebuildingmodMod;
 
-import java.util.List;
-import java.util.ArrayList;
+import java.util.Map;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DavebuildingmodModMenus {
-	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<SoundGeneratorGuiMenu> SOUND_GENERATOR_GUI = register("sound_generator_gui",
-			(id, inv, extraData) -> new SoundGeneratorGuiMenu(id, inv, extraData));
-	public static final MenuType<ParticleGeneratorGuiMenu> PARTICLE_GENERATOR_GUI = register("particle_generator_gui",
-			(id, inv, extraData) -> new ParticleGeneratorGuiMenu(id, inv, extraData));
-	public static final MenuType<VocalsGeneratorGuiMenu> VOCALS_GENERATOR_GUI = register("vocals_generator_gui",
-			(id, inv, extraData) -> new VocalsGeneratorGuiMenu(id, inv, extraData));
-	public static final MenuType<HelpPaperMenu> HELP_PAPER = register("help_paper", (id, inv, extraData) -> new HelpPaperMenu(id, inv, extraData));
+	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, DavebuildingmodMod.MODID);
+	public static final DeferredHolder<MenuType<?>, MenuType<SoundGeneratorGuiMenu>> SOUND_GENERATOR_GUI = REGISTRY.register("sound_generator_gui", () -> IMenuTypeExtension.create(SoundGeneratorGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ParticleGeneratorGuiMenu>> PARTICLE_GENERATOR_GUI = REGISTRY.register("particle_generator_gui", () -> IMenuTypeExtension.create(ParticleGeneratorGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<VocalsGeneratorGuiMenu>> VOCALS_GENERATOR_GUI = REGISTRY.register("vocals_generator_gui", () -> IMenuTypeExtension.create(VocalsGeneratorGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HelpPaperMenu>> HELP_PAPER = REGISTRY.register("help_paper", () -> IMenuTypeExtension.create(HelpPaperMenu::new));
 
-	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
-		MenuType<T> menuType = new MenuType<T>(containerFactory);
-		menuType.setRegistryName(registryname);
-		REGISTRY.add(menuType);
-		return menuType;
-	}
+	public interface MenuAccessor {
+		Map<String, Object> getMenuState();
 
-	@SubscribeEvent
-	public static void registerContainers(RegistryEvent.Register<MenuType<?>> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new MenuType[0]));
+		Map<Integer, Slot> getSlots();
+
+		default void sendMenuStateUpdate(Player player, int elementType, String name, Object elementState, boolean needClientUpdate) {
+			getMenuState().put(elementType + ":" + name, elementState);
+			if (player instanceof ServerPlayer serverPlayer) {
+				PacketDistributor.sendToPlayer(serverPlayer, new MenuStateUpdateMessage(elementType, name, elementState));
+			} else if (player.level().isClientSide) {
+				if (Minecraft.getInstance().screen instanceof DavebuildingmodModScreens.ScreenAccessor accessor && needClientUpdate)
+					accessor.updateMenuState(elementType, name, elementState);
+				PacketDistributor.sendToServer(new MenuStateUpdateMessage(elementType, name, elementState));
+			}
+		}
+
+		default <T> T getMenuState(int elementType, String name, T defaultValue) {
+			try {
+				return (T) getMenuState().getOrDefault(elementType + ":" + name, defaultValue);
+			} catch (ClassCastException e) {
+				return defaultValue;
+			}
+		}
 	}
 }

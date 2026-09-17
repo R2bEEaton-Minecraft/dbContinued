@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/alarm_sign"
-  }
+    "layer0": "davebuildingmod:item/alarm_sign"
+  },
+  "render_type": "translucent"
 }

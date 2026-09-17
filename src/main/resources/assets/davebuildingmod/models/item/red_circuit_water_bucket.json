@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/red_circuit_water_bucket"
+    "layer0": "davebuildingmod:item/red_circuit_water_bucket"
   }
 }

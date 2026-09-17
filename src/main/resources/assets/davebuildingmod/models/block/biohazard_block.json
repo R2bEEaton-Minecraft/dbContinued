@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/biohazard_block",
-    "up": "davebuildingmod:blocks/biohazard_block",
-    "north": "davebuildingmod:blocks/biohazard_block",
-    "east": "davebuildingmod:blocks/biohazard_block",
-    "south": "davebuildingmod:blocks/biohazard_block",
-    "west": "davebuildingmod:blocks/biohazard_block",
-    "particle": "davebuildingmod:blocks/biohazard_block"
-  }
+    "down": "davebuildingmod:block/biohazard_block",
+    "up": "davebuildingmod:block/biohazard_block",
+    "north": "davebuildingmod:block/biohazard_block",
+    "east": "davebuildingmod:block/biohazard_block",
+    "south": "davebuildingmod:block/biohazard_block",
+    "west": "davebuildingmod:block/biohazard_block",
+    "particle": "davebuildingmod:block/biohazard_block"
+  },
+  "render_type": "solid"
 }

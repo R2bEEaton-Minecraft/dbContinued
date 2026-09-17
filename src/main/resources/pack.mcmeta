@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "davebuildingmod mod resources",
-    "pack_format": 9
+    "pack_format": 48,
+    "description": "Just your average building mod, adds everything from Particle Generators to Track Buffers for Create 0.5"
   }
 }

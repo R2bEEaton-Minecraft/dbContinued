@@ -1,10 +1,11 @@
 {
   "parent": "davebuildingmod:custom/vent_tpiece",
   "textures": {
-    "all": "davebuildingmod:blocks/steel_seemless",
-    "particle": "davebuildingmod:blocks/steel_seemless",
-    "0": "davebuildingmod:blocks/steel_plating",
-    "1": "davebuildingmod:blocks/steel_seemless",
-    "missing": "davebuildingmod:blocks/steel_seemless"
-  }
+    "all": "davebuildingmod:block/steel_seemless",
+    "particle": "davebuildingmod:block/steel_seemless",
+    "0": "davebuildingmod:block/steel_plating",
+    "1": "davebuildingmod:block/steel_seemless",
+    "missing": "davebuildingmod:block/steel_seemless"
+  },
+  "render_type": "solid"
 }

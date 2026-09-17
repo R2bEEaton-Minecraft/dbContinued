@@ -1,8 +1,10 @@
 {
   "parent": "block/slab_top",
   "textures": {
-    "bottom": "davebuildingmod:blocks/gravel",
-    "top": "davebuildingmod:blocks/gravel",
-    "side": "davebuildingmod:blocks/gravel"
-  }
+    "particle": "davebuildingmod:block/gravel",
+    "bottom": "davebuildingmod:block/gravel",
+    "top": "davebuildingmod:block/gravel",
+    "side": "davebuildingmod:block/gravel"
+  },
+  "render_type": "solid"
 }

@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/hopper_inside",
-    "up": "davebuildingmod:blocks/hopper_inside",
-    "north": "davebuildingmod:blocks/copper_coil",
-    "east": "davebuildingmod:blocks/copper_coil",
-    "south": "davebuildingmod:blocks/copper_coil",
-    "west": "davebuildingmod:blocks/copper_coil",
-    "particle": "davebuildingmod:blocks/hopper_inside"
-  }
+    "down": "davebuildingmod:block/hopper_inside",
+    "up": "davebuildingmod:block/hopper_inside",
+    "north": "davebuildingmod:block/copper_coil",
+    "east": "davebuildingmod:block/copper_coil",
+    "south": "davebuildingmod:block/copper_coil",
+    "west": "davebuildingmod:block/copper_coil",
+    "particle": "davebuildingmod:block/hopper_inside"
+  },
+  "render_type": "solid"
 }

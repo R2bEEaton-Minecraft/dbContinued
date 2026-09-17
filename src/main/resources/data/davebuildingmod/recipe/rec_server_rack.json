@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/steel"
+    },
+    "b": {
+      "item": "davebuildingmod:basic_circuit"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:server_rack",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "davebuildingmod:brown_steel_plating"
+  },
+  "result": {
+    "id": "davebuildingmod:brown_buffer",
+    "count": 2
+  }
+}

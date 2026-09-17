@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " b ",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_dye"
+    },
+    "b": {
+      "item": "davebuildingmod:basic_circuit"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:green_circuit_nuke",
+    "count": 1
+  }
+}

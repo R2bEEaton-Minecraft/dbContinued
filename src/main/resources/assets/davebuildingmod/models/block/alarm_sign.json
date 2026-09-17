@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/trainsign",
   "textures": {
-    "all": "davebuildingmod:blocks/alarm_sign",
-    "particle": "davebuildingmod:blocks/alarm_sign",
-    "0": "davebuildingmod:blocks/alarm_sign"
-  }
+    "all": "davebuildingmod:block/alarm_sign",
+    "particle": "davebuildingmod:block/alarm_sign",
+    "0": "davebuildingmod:block/alarm_sign"
+  },
+  "render_type": "solid"
 }

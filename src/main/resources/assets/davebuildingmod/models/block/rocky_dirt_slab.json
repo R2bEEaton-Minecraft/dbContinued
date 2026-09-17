@@ -1,8 +1,10 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "davebuildingmod:blocks/rocky_dirt",
-    "top": "davebuildingmod:blocks/rocky_dirt",
-    "side": "davebuildingmod:blocks/rocky_dirt"
-  }
+    "particle": "davebuildingmod:block/rocky_dirt",
+    "bottom": "davebuildingmod:block/rocky_dirt",
+    "top": "davebuildingmod:block/rocky_dirt",
+    "side": "davebuildingmod:block/rocky_dirt"
+  },
+  "render_type": "solid"
 }

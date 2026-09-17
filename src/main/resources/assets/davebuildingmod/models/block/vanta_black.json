@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "davebuildingmod:blocks/vantablack",
-    "up": "davebuildingmod:blocks/vantablack",
-    "north": "davebuildingmod:blocks/vantablack",
-    "east": "davebuildingmod:blocks/vantablack",
-    "south": "davebuildingmod:blocks/vantablack",
-    "west": "davebuildingmod:blocks/vantablack",
-    "particle": "davebuildingmod:blocks/vantablack"
-  }
+    "down": "davebuildingmod:block/vantablack",
+    "up": "davebuildingmod:block/vantablack",
+    "north": "davebuildingmod:block/vantablack",
+    "east": "davebuildingmod:block/vantablack",
+    "south": "davebuildingmod:block/vantablack",
+    "west": "davebuildingmod:block/vantablack",
+    "particle": "davebuildingmod:block/vantablack"
+  },
+  "render_type": "solid"
 }

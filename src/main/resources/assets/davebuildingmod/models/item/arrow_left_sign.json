@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "davebuildingmod:items/arrow_left_sign"
-  }
+    "layer0": "davebuildingmod:item/arrow_left_sign"
+  },
+  "render_type": "translucent"
 }

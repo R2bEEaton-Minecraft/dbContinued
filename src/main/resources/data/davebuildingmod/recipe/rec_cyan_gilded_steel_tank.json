@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_nugget"
+    },
+    "b": {
+      "item": "davebuildingmod:cyan_steel_tank"
+    }
+  },
+  "result": {
+    "id": "davebuildingmod:cyan_gilded_steel_tank",
+    "count": 1
+  }
+}

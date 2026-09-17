@@ -1,8 +1,10 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
-    "bottom": "davebuildingmod:blocks/black_steel",
-    "top": "davebuildingmod:blocks/black_steel",
-    "side": "davebuildingmod:blocks/black_steel"
-  }
+    "particle": "davebuildingmod:block/black_steel",
+    "bottom": "davebuildingmod:block/black_steel",
+    "top": "davebuildingmod:block/black_steel",
+    "side": "davebuildingmod:block/black_steel"
+  },
+  "render_type": "solid"
 }

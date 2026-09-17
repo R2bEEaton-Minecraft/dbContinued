@@ -1,11 +1,12 @@
 {
   "parent": "davebuildingmod:custom/pistonhead",
   "textures": {
-    "all": "davebuildingmod:blocks/steel_plating",
-    "particle": "davebuildingmod:blocks/steel_plating",
-    "0": "davebuildingmod:blocks/steel_pillar_side",
-    "1": "davebuildingmod:blocks/steel_plating",
-    "2": "davebuildingmod:blocks/anvil",
-    "3": "davebuildingmod:blocks/black_steel"
-  }
+    "all": "davebuildingmod:block/steel_plating",
+    "particle": "davebuildingmod:block/steel_plating",
+    "0": "davebuildingmod:block/steel_pillar_side",
+    "1": "davebuildingmod:block/steel_plating",
+    "2": "davebuildingmod:block/anvil",
+    "3": "davebuildingmod:block/black_steel"
+  },
+  "render_type": "cutout"
 }

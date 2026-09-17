@@ -1,8 +1,9 @@
 {
   "parent": "davebuildingmod:custom/boiler",
   "textures": {
-    "all": "davebuildingmod:blocks/lime_boiler",
-    "particle": "davebuildingmod:blocks/gilded_lime_steel_tank",
-    "cover": "davebuildingmod:blocks/lime_boiler"
-  }
+    "all": "davebuildingmod:block/lime_boiler",
+    "particle": "davebuildingmod:block/gilded_lime_steel_tank",
+    "cover": "davebuildingmod:block/lime_boiler"
+  },
+  "render_type": "solid"
 }

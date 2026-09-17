@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_glass_pane_side_alt",
-  "textures": {
-    "edge": "davebuildingmod:blocks/acacia_leaves",
-    "pane": "davebuildingmod:blocks/acacia_leaves"
-  }
-}
