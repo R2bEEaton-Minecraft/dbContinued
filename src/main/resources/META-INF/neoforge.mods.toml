@@ -4,13 +4,13 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="davebuildingmod"
-version="5.0"
-displayName="Dave's Building Extended"
+version="1.0.0"
+displayName="Dave's Building Continued"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/daves-building-extended"
 logoFile="logo.png"
 credits="L0rdzie, VanillaFac5, Create Mod Team, Mcreator"
 authors="SpaceDave1337"
-description="Just your average building mod, adds everything from Particle Generators to Track Buffers for Create 0.5"
+description="A NeoForge continuation of Dave's Building Extended, with vanilla-friendly industrial, rail, factory, and Create-focused decoration. Future updates may explore survival-friendly progression and other community-requested improvements."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
